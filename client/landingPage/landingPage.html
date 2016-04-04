@@ -1,7 +1,21 @@
-<template name ="landingPage">
+<template name="landingPage">
 	<nav>
 	{{ > yield "navbar" }}
 	</nav>
 	
+	{{#if currentUser}}
 	<h1>Welcome!</h1>
+	{{> settings}}
+	{{else}}
+	<h1>Sign up today</h1>
+
+	{{/if}}
+
+
+
+</template>
+
+<template name="settings">
+    <p>You're logged in!</p>
+    <p><a href="#" class="logout">Logout</a></p>
 </template>

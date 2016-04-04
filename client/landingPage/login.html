@@ -1,0 +1,19 @@
+<template name="login">
+  <nav>
+  {{ > yield "navbar" }}
+  </nav>
+
+  {{#if currentUser}}
+      <h2>Already Logged In</h2>
+  {{else}}
+  <h2>Log in</h2>
+  <form>
+    <input type="email" name="loginEmail" placeholder="Email">
+    <br>
+    <input type="password" name="loginPassword" placeholder="Password">
+    <br>
+    <input type="submit" value="Login">
+    <br>
+  </form>
+  {{/if}}
+</template>
