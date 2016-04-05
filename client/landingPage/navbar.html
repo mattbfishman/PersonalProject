@@ -5,9 +5,15 @@
             	<div class="nav pull-left">
             		<li><a href="{{pathFor route='landingPage'}}">Home</a></li>
             	</div>
+
                 <div class="nav pull-right">
-                    <li><a href="{{pathFor route='signup'}}">Sign Up</a></li>
+                	{{#if currentUser}}
+  					<li><a href="{{pathFor route='accountSettings'}}">Settings</a></li>
+  					<li><a href="#" class="logout">Log Out</a></li>
+  					{{else}}
+  					<li><a href="{{pathFor route='signup'}}">Sign Up</a></li>
                     <li><a href="{{pathFor route='login'}}">Login</a></li>
+  					{{/if}}
                 </div>
             </div>
         </div>
