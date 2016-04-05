@@ -1,0 +1,22 @@
+.corkboard {
+	text-align: center;
+}
+.corkboard-image {
+	height: 500px;
+	width: 750px;
+}
+#landingCarousel {
+	text-align: center;
+}
+.landing-header {
+	text-align: center;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+.container-fluid{
+	max-width: 100% !important;
+}
+.account-settings{
+	text-align: center;
+}

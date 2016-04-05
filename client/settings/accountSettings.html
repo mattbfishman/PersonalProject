@@ -1,17 +1,22 @@
 <template name="accountSettings">
-	<form>
-		First Name:<br>
-		<input type="text" name="firstName"><br>
-		Last Name:<br>
-		<input type="text" name="lastName"><br>
-		Phone Number:<br>
-		<input type="tel" name="usrtel"><br>
-		<button type="button" class="btn btn-primary">
-			Save
-		</button>
-		<button type="button" class="btn btn-danger">
-			Edit
-		</button>
-
-	</form>
+		<div class="account-settings container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<form>
+						First Name:<br>
+						<input class="firstName" type="text" name="firstName" disabled><br>
+						Last Name:<br>
+						<input class="lastName" type="text" name="lastName" disabled><br>
+						Phone Number:<br>
+						<input class="phoneNumber" type="tel" name="phoneNumber" disabled><br>
+						<button type="button" class="save btn btn-primary">
+							Save
+						</button>
+						<button type="button" class="edit btn btn-danger">
+							Edit
+						</button>
+				</form>
+				</div>
+			</div>
+		</div>
 </template>
