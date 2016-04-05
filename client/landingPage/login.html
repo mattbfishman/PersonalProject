@@ -6,14 +6,20 @@
   {{#if currentUser}}
   
   {{else}}
-  <h2>Log in</h2>
-  <form>
-    <input type="email" name="loginEmail" placeholder="Email">
-    <br>
-    <input type="password" name="loginPassword" placeholder="Password">
-    <br>
-    <input type="submit" value="Login">
-    <br>
-  </form>
+  <div class="login container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Log in</h2>
+          <form>
+            <input type="email" name="loginEmail" placeholder="Email">
+            <br>
+            <input type="password" name="loginPassword" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+            <br>
+          </form>
+        </div>
+      </div>
+    </div>
   {{/if}}
 </template>

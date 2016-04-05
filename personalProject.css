@@ -14,9 +14,12 @@
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
-.container-fluid{
+.container-fluid {
 	max-width: 100% !important;
 }
-.account-settings{
+.account-settings {
+	text-align: center;
+}
+.login {
 	text-align: center;
 }
