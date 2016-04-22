@@ -3,10 +3,7 @@
 	<nav>
 	{{ > yield "navbar" }}
 	</nav>
-  	
-  	{{#if currentUser}}
-  		<h2>Already Logged In</h2>
-  	{{else}}
+  
     <div class="login container-fluid">
       <div class="row">
         <div class="col-sm-12">
@@ -18,9 +15,9 @@
           	<br>
           	<input type="submit" value="Signup">
         	</form>
+          <div id="invalid"></div>
         </div>
       </div>
     </div>
-  	{{/if}}
 
 </template>

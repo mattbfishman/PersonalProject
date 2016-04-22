@@ -7,8 +7,5 @@ Template.login.events({
         if(Meteor.userId()){
 			this.next();
 		}
-		else{
-			Router.go("landingPage");
-		}
     }
 });
