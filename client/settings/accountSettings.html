@@ -5,27 +5,29 @@
 					<h1>Account Settings</h1>
 				</div>
 			</div>
+			{{#with accountFind}}
 			<div class="row">
 				<div class="col-sm-12">
 					<form class="form-horizontal" role="form">
 					  <div class="form-group">
 				    		<label class="control-label col-sm-2" for="firstName">First Name:</label>
+				    	
 				    	<div class="col-sm-10">
-				      		<input type="firstName" class="form-control" id="firstName" placeholder="Enter first name" disabled>
+				      		<input type="firstName" class="form-control" id="firstName" value="{{name.firstName}}" disabled>
 				    	</div>
 					  </div>
 					  <div class="form-group">
 				    		<label class="control-label col-sm-2" for="lastName">Last Name:</label>
 				    	<div class="col-sm-10">
-				      		<input type="lastName" class="form-control" id="lastName" placeholder="Enter last name" disabled>
+				      		<input type="lastName" class="form-control" id="lastName" placeholder="Enter your last name" value="{{name.lastName}}" disabled>
 				    	</div>
 					  </div>
 					  <div class="form-group">
 				    		<label class="control-label col-sm-2" for="phone">Phone Number:</label>
 				    	<div class="col-sm-10">
-				      		<input type="phone" class="form-control" id="phone" placeholder="Enter phone number" disabled>
+				      		<input type="phone" class="form-control" id="phone" placeholder="Enter your phone number" value ="{{contact.phone}}" disabled>
 				    	</div>
-					  </div>		
+					  </div>
 						<button type="button" class="save btn btn-primary">
 							Save
 						</button>
@@ -35,5 +37,8 @@
 				</form>
 				</div>
 			</div>
+			{{/with}}
+
+
 		</div>
 </template>
