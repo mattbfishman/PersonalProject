@@ -99,13 +99,19 @@
 }
 
 .note{
-	width: 200px;
-	height: 200px;
+  margin:10px; padding:10px; 
+	width: 150px;
+	height: 150px;
 	background-color: #FCF0AD;
-  	align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 	display: flex;
 	text-align: center;
+
+}
+
+.note-spacing {
+  padding-left: 5px;
 }
 
 .corkboard-image{
@@ -122,6 +128,7 @@
 	min-height: 100%;
 	min-width: 100%;
 	position: fixed;
+  background-size: auto;
 }
 
 .landing-header{
@@ -137,24 +144,31 @@
 	width: 350px;
 	height: 200px;
 	background-color: #56C4E8;
-	margin-left:5px;
 }
 
 .corkboard-post-header{
 	align-items: center;
-    justify-content: center;
+  justify-content: center;
 	display: flex;
 	text-align: center;
 	color: #000000;
 	width: 350px;
 	height: 200px;
 	background-color: #EE5E9F;
-	margin-left:5px;
 }
 
 .header-note{
 	align-items: center;
-    justify-content: center;
+  justify-content: center;
 	display: flex;
 	text-align: center;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }

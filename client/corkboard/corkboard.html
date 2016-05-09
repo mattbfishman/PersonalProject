@@ -21,7 +21,7 @@
 	<div class="post-it">
 	{{#each postFind}}
 	<a class="postclick" data-toggle="modal" href="#myModal{{_id}}" id="{{accountId}}">
-		<div class="col-sm-2 col-sm-offset-1">
+		<div class="col-sm-2">
 		 	<h4 class="note">
 		 		{{title}}
 		 	</h4>
@@ -39,14 +39,14 @@
 	      </div>
 	      <div class="modal-body">
 	        <p><b>Description: </b>{{description}}</p>
-	        <p><b>Date Of Trip: </b>{{date}}</p>
+	        <p><b>Date Of Trip: </b>{{getDate}}</p>
 	      </div>
-	       {{#with accountFind}}
+	       
 	      <div class="contact modal-body">
-	        <p><b>Name: </b>{{name.firstName}} {{name.lastName}}</p>
-	        <p><b>Phone: </b>{{contact.phone}}</p>
+	        <p><b>Name: </b>{{getFirstName}} {{getLastName}}</p>
+	        <p><b>Phone: </b>{{getPhone}}</p>
 	      </div>
-	     {{/with}}
+	    
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	      </div>
