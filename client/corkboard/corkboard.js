@@ -23,11 +23,6 @@ Template.postItNote.helpers({
   'getEmail': function(){
   	return Account.findOne({accountId:this.accountId}).contact.email;
   }
- //  'accountFind': function(){
- //  	let id = document.getElementsByClassName("postclick")[0].id;
- //  	console.log(id);
-	// let account = Account.find({accountId: id}).fetch();
-	// return account[0];
- //  }
+  
 });
 

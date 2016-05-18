@@ -21,18 +21,23 @@ Template.accountSettings.events(({
     $("#firstName").prop("disabled", false);
     $("#lastName").prop("disabled", false);
     $("#phone").prop("disabled", false);
+    $("#email").prop("disabled", false);
   },
   'click .save': function(event, template) {
     let id = Meteor.userId();
     let first = template.find('#firstName').value;
     let last = template.find('#lastName').value;
     let phone = template.find('#phone').value;
+    let email = template.find('#email').value;
 
-    Meteor.call('editAccount', id, first, last, phone);
+
+    Meteor.call('editAccount', id, first, last, phone, email);
     
     $("#firstName").prop("disabled", true);
     $("#lastName").prop("disabled", true);
     $("#phone").prop("disabled", true);
+    $("#email").prop("disabled", true);
+
   },
 
 }));

@@ -4,7 +4,7 @@
 			<div class="post-header col-sm-12">
 				<h1>New Post</h1>
 			</div>	
-			<form class="form-horizontal" role="form">
+			<form class="form-horizontal" role="form" action="{{pathFor route='landingPage'}}">
 			  <div class="form-group">
 			    <label class="control-label col-sm-2" for="title">Title</label>
 			    <div class="col-sm-9">
@@ -23,6 +23,13 @@
                     	<input class="form-control" type="date" id="postdate">
                     </div>
                 </div>
+              	<!-- <div class="form-group">
+              		<label class="control-label col-sm-2" for="ride-type">Ride Type</label>
+              		<div class="col-sm-9" id="ride-type">
+	              		<label class="radio-inline" id="radio1"><input type="radio" name="optradio">Passenger</label>
+						<label class="radio-inline" id="radio2"><input type="radio" name="optradio">Driver</label>
+					</div>
+              	</div> -->
 			  <div class="form-group"> 
 			    <div class="col-sm-offset-2 col-sm-9">
 			      <button type="submit" class="submit btn btn-default">Submit</button>

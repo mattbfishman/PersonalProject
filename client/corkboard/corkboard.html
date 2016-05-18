@@ -21,7 +21,7 @@
 	<div class="post-it">
 	{{#each postFind}}
 	<a class="postclick" data-toggle="modal" href="#myModal{{_id}}" id="{{accountId}}">
-		<div class="col-sm-2">
+		<div class="idv-note col-sm-2">
 		 	<h4 class="note">
 		 		{{title}}
 		 	</h4>
@@ -45,6 +45,7 @@
 	      <div class="contact modal-body">
 	        <p><b>Name: </b>{{getFirstName}} {{getLastName}}</p>
 	        <p><b>Phone: </b>{{getPhone}}</p>
+	        <p><b>Email: </b><a href="mailto:{{getEmail}}" target="_top">{{getEmail}}</a></p>
 	      </div>
 	    
 	      <div class="modal-footer">

@@ -10,7 +10,6 @@ Template.newPost.events(({
     let title = template.find('#title').value;
     let desc = template.find('#description').value;
     let date = template.find('#postdate').value;
-
     Meteor.call('newPost', id, title, desc, date);
 	
 	}
