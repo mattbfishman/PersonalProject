@@ -13,7 +13,3 @@ Meteor.publish('posts', function( postId ) {
 	    return null;
 	}
 });
-
-Meteor.publish('Allposts', function(){
-	return Posts.find();	
-});  
