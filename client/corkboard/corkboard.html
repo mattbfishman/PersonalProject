@@ -1,0 +1,62 @@
+<template name="corkboard">
+	<img class="corkboard-image" src="img/cork-board.jpg" id="bg" alt="">
+	<div class="corkboard container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="header-note">
+					<h2 class="corkboard-header">Find or Post a Ride!</h2>
+				</div>
+			</div>		
+				{{> postItNote}}
+		</div>
+
+	</div>
+
+
+	
+
+</template>
+
+<template name="postItNote">
+	<div class="post-it">
+	{{#each postFind}}
+	<a class="postclick" data-toggle="modal" href="#myModal{{_id}}" id="{{accountId}}">
+		<div class="idv-note col-sm-2">
+		 	<h4 class="note">
+		 		{{title}}
+		 	</h4>
+	 	</div>
+	 </a>
+
+	 
+	 <div id="myModal{{_id}}" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">{{title}}</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p><b>Description: </b>{{description}}</p>
+	        <p><b>Date Of Trip: </b>{{getDate}}</p>
+	      </div>
+	       
+	      <div class="contact modal-body">
+	        <p><b>Name: </b>{{getFirstName}} {{getLastName}}</p>
+	        <p><b>Phone: </b>{{getPhone}}</p>
+	        <p><b>Email: </b><a href="mailto:{{getEmail}}" target="_top">{{getEmail}}</a></p>
+	      </div>
+	    
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	 {{/each}}
+	</div>
+
+
+</template>
